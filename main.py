@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import datetime
 
+
 def save_current_app_list_to_csv(csv_name):
     import requests, json, csv
 
@@ -23,11 +24,11 @@ def read_key_from_file():
         steam_key = f.readline()
     return steam_key
 
-
 def main():
     save_current_app_list_to_csv(str(datetime.datetime.now()).replace(":", "-")+'.csv')
-    print(read_key_from_file())
 
 
 if __name__ == '__main__':
     main()
+
+class
