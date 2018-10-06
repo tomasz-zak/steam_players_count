@@ -1,4 +1,4 @@
-class SteamReq():
+class SteamReq(object):
 	def __init__(self, url):
 		print("Init klasy nadrzednej")
 		#<cr>main_url = "https://apiesteampowered.com/ISteamApps/" # GetAppList/v0001/":

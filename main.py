@@ -31,6 +31,5 @@ def main():
     save_current_app_list_to_csv(str(datetime.datetime.now()).replace(":", "-")+'.csv')
 
 if __name__ == '__main__':
-	pass
-    #main()
+    main()
 
