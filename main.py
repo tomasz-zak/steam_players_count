@@ -1,14 +1,11 @@
 #!/usr/bin/python
 import datetime
-
+from steamAPINames import all_apps_url
 
 def save_current_app_list_to_csv(csv_name):
     import requests, json, csv
 
-    all_apps_url = "https://api.steampowered.com/ISteamApps/GetAppList/v0001/"
-    current_players_per_app = 'https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?format=json&appid='
-
-    response = requests.get(all_apps_url)
+    response = requests.get(all_apps_url())
     json_response = json.loads(response.text)
     with open('json_resp.json', 'w') as f:
 		f.write(response.text.encode('utf-8'))
